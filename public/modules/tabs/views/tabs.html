@@ -1,0 +1,10 @@
+<md-content>
+  <md-tabs md-dynamic-height md-border-bottom>
+    <md-tab ng-repeat="tab in Tabs.tabItems.list" label="{{ tab.title }}">
+      <md-content class="md-padding padding-inner">
+        <h3 class="md-headline">{{ tab.title }}</h3>
+        <p>{{ tab.text }}</p>
+      </md-content>
+    </md-tab>
+  </md-tabs>
+</md-content>

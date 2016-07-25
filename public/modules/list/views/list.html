@@ -1,0 +1,18 @@
+<div layout="row" layout-wrap layout-align="center center">
+  
+  <div flex="30" flex-sm="45" flex-xs="80">
+    <md-list>
+      <div ng-repeat="listItem in List.listItems.list">
+        <md-list-item target="_blank" ng-href="{{ listItem.link }}" class="md-2-line" ng-click="null">
+          <img ng-src="{{ listItem.image }}" class="md-avatar" />
+          <div class="md-list-item-text" layout="column">
+            <h3>{{ listItem.title }}</h3>
+            <p>{{ listItem.link }}</p>
+          </div>
+        </md-list-item>
+        <md-divider ></md-divider>
+      </div>
+    </md-list>
+  </div>
+
+</div>

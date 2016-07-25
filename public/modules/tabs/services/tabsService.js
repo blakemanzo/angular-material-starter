@@ -1,0 +1,31 @@
+angular.module('tabsService', [])
+.factory('Tabs', function($http) {
+	
+	var tabsFactory = {};
+
+	tabsFactory.all = function() {
+		//return $http.get(API.URL/tabs);
+		return {
+			"list":[
+				{
+				"id":"1",
+				"title":"Material Design",
+				"text": "A material metaphor is the unifying theory of a rationalized space and a system of motion. The material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic."
+				},
+				{
+				"id":"2",
+				"title":"Angular Material",
+				"text": "Angular Material is both a UI Component framework and a reference implementation of Google's Material Design Specification. This project provides a set of reusable, well-tested, and accessible UI components based on Material Design."
+				},
+				{
+				"id":"3",
+				"title":"MaterialUp",
+				"text": "MaterialUp curates the best of Material Design inspiration, tools and freebies. Get your daily dose of Material design inspiration!"
+				}
+			]
+			};
+	};
+
+	return tabsFactory;
+
+});
