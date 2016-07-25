@@ -16,7 +16,7 @@ angular.module('cardsService', [])
 				{
 				"id":"2",
 				"image":"./temp-assets/card-angular-material.png",
-				"title":"Material Angular",
+				"title":"Angular Material",
 				"link":"http://material.angularjs.org"
 				},
 				{

@@ -17,7 +17,7 @@ angular.module('listService', [])
 				{
 				"id":"2",
 				"image":"./temp-assets/list-angular-material.png",
-				"title":"Material Angular",
+				"title":"Angular Material",
 				"link":"http://material.angularjs.org"
 				},
 				{
