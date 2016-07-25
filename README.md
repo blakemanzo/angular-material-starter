@@ -3,6 +3,33 @@ Angular Material Starter
 
 A boilerplate for Material Design applications using Angular 1.x and Angular Material.
 
+Structure
+---------
+
+All files for each particular module are separated into their own folders, typically each module has a dedicated route.
+
+```
+.
+├── public/
+│   ├── modules/       			# Modules
+│	│	├── exampleModule/
+│	│	│	├── controllers/
+│	│	│	│	├── exampleCtrl.js
+│	│	│	├── services/
+│	│	│	│	├── exampleService.js
+│	│	│	├── css/
+│	│	│	│	├── example.css
+│	│	│	├── views/ 
+│	│	│	│	├── example.html
+│   ├── app.controller.js       # Main controller
+│   ├── app.routes.js           # App routes
+│   ├── app.js                 	# Main app file
+│	├── home.html 				# Homepage template
+│   ├── index.html             	# Main template
+├── index.js                  	# Express application
+└── package.json               	# NPM Dependencies and scripts
+```
+
 Getting Started
 ---------------
 
