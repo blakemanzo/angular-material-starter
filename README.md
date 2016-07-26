@@ -12,19 +12,19 @@ All files for each particular module are separated into their own folders, typic
 .
 ├── public/
 │   ├── modules/       			# Modules
-│	│	├── exampleModule/
-│	│	│	├── controllers/
-│	│	│	│	├── exampleCtrl.js
-│	│	│	├── services/
-│	│	│	│	├── exampleService.js
-│	│	│	├── css/
-│	│	│	│	├── example.css
-│	│	│	├── views/ 
-│	│	│	│	├── example.html
+│   │   ├── exampleModule/
+│   │   │   ├── controllers/
+│   │   │   │   ├── exampleCtrl.js
+│   │   │   ├── services/
+│   │   │   │   ├── exampleService.js
+│   │   │   ├── css/
+│   │   │   │   ├── example.css
+│   │   │   ├── views/ 
+│   │   │   │   ├── example.html
 │   ├── app.controller.js       # Main controller
 │   ├── app.routes.js           # App routes
 │   ├── app.js                 	# Main app file
-│	├── home.html 				# Homepage template
+│   ├── home.html 				# Homepage template
 │   ├── index.html             	# Main template
 ├── index.js                  	# Express application
 └── package.json               	# NPM Dependencies and scripts
