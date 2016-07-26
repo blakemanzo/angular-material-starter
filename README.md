@@ -25,9 +25,9 @@ All files for each particular module are separated into their own folders, typic
 │   ├── app.routes.js           # App routes
 │   ├── app.js                 	# Main app file
 │   ├── home.html 				# Homepage template
-│   ├── index.html             	# Main template
-├── index.js                  	# Express application
-└── package.json               	# NPM Dependencies and scripts
+│   ├── index.html              # Main template
+├── index.js                    # Express application
+└── package.json                # NPM Dependencies and scripts
 ```
 
 Getting Started

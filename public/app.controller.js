@@ -3,10 +3,12 @@ angular.module('appCtrl', [])
 
     self = this;
 
+    // Update title using rootscope
     self.updateTitle = function() {
         $rootScope.title = $stateParams.title;
     }
 
+    // Run updateTitle on each state change
     $rootScope.$on('$stateChangeSuccess', self.updateTitle);
 
 	self.toggleLeft = function() {

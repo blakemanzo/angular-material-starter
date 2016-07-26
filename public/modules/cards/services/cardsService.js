@@ -3,30 +3,11 @@ angular.module('cardsService', [])
 	
 	var cardsFactory = {};
 
+	// Replicate $http request returning JSON
 	cardsFactory.all = function() {
-		//return $http.get(API.URL/cards);
-		return {
-			"list":[
-				{
-				"id":"1",
-				"image":"./temp-assets/card-material.png",
-				"title":"Material Design",
-				"link":"http://material.google.com"
-				},
-				{
-				"id":"2",
-				"image":"./temp-assets/card-angular-material.png",
-				"title":"Angular Material",
-				"link":"http://material.angularjs.org"
-				},
-				{
-				"id":"3",
-				"image":"./temp-assets/card-materialup.png",
-				"title":"MaterialUp",
-				"link":"http://www.materialup.com"
-				}
-			]
-			};
+
+		return $http.get('./modules/cards/services/cards.json');
+
 	};
 
 	return cardsFactory;

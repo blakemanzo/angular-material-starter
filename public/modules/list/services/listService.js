@@ -3,31 +3,11 @@ angular.module('listService', [])
 	
 	var listFactory = {};
 
+	// Replicate $http request returning JSON
 	listFactory.all = function() {
-		//return $http.get(API.URL/list);
-		return {
-			"id": 3,
-			"list":[
-				{
-				"id":"1",
-				"image":"./temp-assets/list-material.png",
-				"title":"Material Design",
-				"link":"http://material.google.com"
-				},
-				{
-				"id":"2",
-				"image":"./temp-assets/list-angular-material.png",
-				"title":"Angular Material",
-				"link":"http://material.angularjs.org"
-				},
-				{
-				"id":"3",
-				"image":"./temp-assets/list-materialup.png",
-				"title":"MaterialUp",
-				"link":"http://www.materialup.com"
-				}
-			]
-			};
+
+		return $http.get('./modules/list/services/list.json');
+
 	};
 
 	return listFactory;

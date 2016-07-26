@@ -3,6 +3,13 @@ angular.module('listCtrl', ['listService'])
 	
 	self = this;
 
-	self.listItems = List.all();
+	// Grab all the items from List Service
+	List.all()
+    .success(function(data) {
+        self.listItems = data;
+    })
+    .error(function(data) {
+        // Error Handling
+    });
 
 });

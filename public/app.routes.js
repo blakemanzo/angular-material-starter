@@ -3,6 +3,8 @@ router.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $urlRouterProvider.otherwise('/');
 
+    // UI Router States
+    // Inserting Page title as State Param
     $stateProvider
         .state('home', {
             url: '/',

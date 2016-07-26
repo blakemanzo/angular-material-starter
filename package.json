@@ -1,7 +1,7 @@
 {
   "name": "angular-material-starter",
   "description": "A boilerplate for Material Design applications using Angular 1.x and Angular Material",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "repository": {
   "type": "git",
   "url": "https://github.com/blakemanzo/angualr-material-starter.git"
