@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700'>
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans:400,700'>
 
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
@@ -46,7 +46,7 @@
 
 <body ng-app="materialApp" layout="row" ng-controller="appCtrl as app">
 
-    <md-sidenav class="md-sidenav-left md-whiteframe-4dp" md-component-id="left">
+    <md-sidenav class="md-sidenav-left md-whiteframe-4dp ng-cloak" md-component-id="left">
 
         <md-toolbar class="md-toolbar-tools" layout="row" layout-align="center-center">
 
@@ -79,7 +79,7 @@
 
     </md-sidenav>
 
-    <md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="right">
+    <md-sidenav class="md-sidenav-right md-whiteframe-4dp ng-cloak" md-component-id="right">
 
         <md-toolbar class="md-toolbar-tools" layout="row" layout-align="space-between-center">
             <h3 class="md-toolbar-tools">User Menu</h3>
@@ -92,7 +92,7 @@
 
     </md-sidenav>
 
-<div style="width:100%">
+<div style="width:100%" class="ng-cloak">
     <md-toolbar class="toolbar">
         <div layout="row" layout-align="center center" layout-wrap class="md-toolbar-tools">
 
@@ -114,7 +114,7 @@
 
     </md-toolbar>
 
-<div ui-view></div>
+    <div ui-view></div>
 
 </div>
 
